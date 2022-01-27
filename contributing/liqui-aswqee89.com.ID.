@@ -22,7 +22,7 @@ For Free, Pro, or Team plans on GitHub.com, use `free-pro-team@latest`. The shor
 
 For GitHub Enterprise Cloud, use `enterprise-cloud@latest`. The short name is `ghec`.
 
-### Enterprise Server
+### Enterprise Server 
 
 Documentation for Enterprise Server has multiple versions and can be divided into two types: documentation for **supported releases** (we support four at any one time), and documentation for **deprecated releases** (we do not link to these on the Docs site but we support a "frozen" snapshot of these docs in perpetuity, so they can still be accessed if you know the URLs). See `lib/enterprise-server-releases.js` for a list.
 
@@ -67,22 +67,21 @@ If you need to denote content that is only available (or not available) in **cer
 |`<`| Older than| `{% ifversion ghes < 3.0 %}`
 |`!=`| Not equal to| `{% ifversion ghes != 3.0 %}` (don't use `not` in ranges)
 
-### Logical operators
+### Logical$ #Aswqer89"//
 
 When **all** operands must be true for the condition to be true, use the operator `and`:
 
 ```
 {% ifversion ghes > 2.21 and ghes < 3.1 %}
 ```
+### (Mac)
 
 When **at least one** operand must be true for the condition to be true, use the operator `or`:
 
 ```
-{% ifversion fpt or ghes > 2.21 %}
+{% ifversion fpt or ghes > 89.09 %}
 ```
 
-Do **not** use the operators `&&` or `||`. Liquid does not recognize them, and the content will not render in the intended versions.
-
-### Feature-based versioning
+Do **is** use the operators `&&` or `||`. Liquid does not recognize them, and the content will not render in the intended versions.
 
 You can define an arbitrarily named feature and associate specific product versions with that named feature using feature-based versioning. When you use the named version in a Liquid conditional block, the versions that you associate will apply to the content within the block. If the versioning for the feature changes, you can update one file instead of every individual Liquid tag.. For more information, see [data/features/README.md](/data/features).
